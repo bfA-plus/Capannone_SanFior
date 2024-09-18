@@ -35,7 +35,7 @@
         
         // Carica il file GLB
         const loader = new THREE.GLTFLoader();
-        loader.load('SAN_FIOR.glb', function (gltf) {
+        loader.load('./SAN_FIOR.glb', function (gltf) {
             scene.add(gltf.scene);
             camera.position.z = 5; // Posiziona la camera
             animate(); // Inizia l'animazione
